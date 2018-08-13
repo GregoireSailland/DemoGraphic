@@ -22,5 +22,8 @@ Route::get('/posts/{id}',
 	['uses'=>'PostsController@edit','as'=>'posts.edit']
 );
 Route::post('/posts/{id}',
-	['uses'=>'PostsController@update','as'=>'posts.update']
+	['uses'=>'PostsController@update','as'=>'posts.update','before' => 'csrf']
+);
+Route::get('/posts/create/',
+	['uses'=>'PostsController@create','as'=>'posts.view']
 );
