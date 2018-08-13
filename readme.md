@@ -8,5 +8,5 @@ B --> C
 ```
 
 # Setup
-	Comming soon
+	Coming soon
 
